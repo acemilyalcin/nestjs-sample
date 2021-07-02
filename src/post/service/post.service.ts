@@ -4,9 +4,8 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import PostDto from './dto/post.dto';
-import { Post } from './post.entity';
-import { PostRepository } from './post.repository';
+import PostDto from '../dto/post.dto';
+import { PostRepository } from '../repository/post.repository';
 
 @Injectable()
 export class PostService {
